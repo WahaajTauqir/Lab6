@@ -1,0 +1,3 @@
+<div *ngFor="let user of users; let i = index">
+  <app-user-detail [user]="user" (remove)="removeUser(i)"></app-user-detail>
+</div>
